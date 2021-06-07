@@ -17,7 +17,6 @@ class MLAlgorithm(models.Model):
     parent_endpoint = models.ForeignKey(Endpoint, on_delete=models.CASCADE)
 
 class MLAlgorithmStatus(models.Model):
-
     status = models.CharField(max_length=128)
     active = models.BooleanField()
     created_by = models.CharField(max_length=128)
