@@ -19,7 +19,7 @@ class MLTests(TestCase):
     def test_registry(self):
         registry = MLRegistry()
         self.assertEqual(len(registry.endpoints), 0)
-        endpoint_name = "income_classifier"
+        endpoint_name = "Tweets_classifier"
         algorithm_object = tens_flow_classifier("../../research/")
         algorithm_name = "random forest"
         algorithm_status = "production"

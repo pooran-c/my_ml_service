@@ -8,27 +8,17 @@ import inspect
 from apps.ml.registry import MLRegistry
 from apps.ml.tweets_classifier.ten_flow import tens_flow_classifier
 
-
-
-#from ..apps.ml.registry import  MLRegistry
-#from apps.ml.tweets_classifier.ten_flow import tens_flow_classifier
-
-
-
-
-
-
 try:
     registry = MLRegistry() # create ML registry
     # Random Forest classifier
     rf = tens_flow_classifier("../../research/")
     # add to ML registry
-    registry.add_algorithm(endpoint_name="income_classifier",
+    registry.add_algorithm(endpoint_name="Tweets_classifier",
                             algorithm_object=rf,
-                            algorithm_name="random forest",
+                            algorithm_name="tf",
                             algorithm_status="production",
                             algorithm_version="0.0.1",
-                            owner="Piotr",
+                            owner="Pooran",
                             algorithm_description="rnn",
                             algorithm_code=inspect.getsource(tens_flow_classifier))
 
