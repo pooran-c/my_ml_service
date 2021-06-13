@@ -21,7 +21,7 @@ class MLTests(TestCase):
         self.assertEqual(len(registry.endpoints), 0)
         endpoint_name = "Tweets_classifier"
         algorithm_object = tens_flow_classifier("../../research/")
-        algorithm_name = "random forest"
+        algorithm_name = "TF"
         algorithm_status = "production"
         algorithm_version = "0.0.1"
         algorithm_owner = "Pooran"
