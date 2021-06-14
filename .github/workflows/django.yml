@@ -29,4 +29,5 @@ jobs:
       run: |
         pwd
         ls
+        ls /backend
         python /backend/server/manage.py test
