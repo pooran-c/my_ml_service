@@ -28,4 +28,4 @@ jobs:
     - name: Run Tests
       run: |
         pwd
-        python manage.py test
+        python /backend/server/manage.py test
