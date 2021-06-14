@@ -28,4 +28,5 @@ jobs:
     - name: Run Tests
       run: |
         pwd
+        ls
         python /backend/server/manage.py test
